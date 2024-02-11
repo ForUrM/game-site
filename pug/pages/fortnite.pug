@@ -1,0 +1,66 @@
+extends ../layouts/pages-layout
+block title 
+  - var title ="Fortnite"
+block content
+  header
+    .fortnite-box
+      .container-xl.p-0
+        .container
+          .row
+            .col-xxl-6.col-xl-6.col-lg-6.col-md-12
+              // Колонка для блока с текстом
+              .hero-section.pt-5
+                h1.hero-title.text-white.m-0 Dota 2
+                p.hero-desc.text-white.my-5
+                  | Dota 2 — компьютерная многопользовательская командная игра жанра стратегия в реальном времени с элементами компьютерной ролевой игры, реализация известной карты DotA для игры Warcraft III в отдельном клиенте.
+                p.hero-desc.text-white
+                  | В игре участвуют две команды по пять человек. Одна команда играет за светлую сторону, другая — за тёмную. Каждый игрок управляет одним героем, каждый из которых обладает особыми навыками и умениями.
+      .img-mobile
+        img(src='./img/pic/fortnite-big.png' alt='fortnite-big')
+  main
+    section.gallery.pt-5
+      .container-xl.p-0
+        .container
+          h1.gallery-title Галерея
+          // Swiper
+          .swiper.mySwiper
+            .swiper-wrapper
+              .swiper-slide
+                img(src='./img/pic/slider/fortnite-slide-1.png' alt='fortnite-slide-1.png')
+              .swiper-slide
+                img(src='./img/pic/slider/fortnite-slide-2.png' alt='fortnite-slide-2.png')
+            .swiper-button-next
+            .swiper-button-prev
+    section.articles.py-5
+      .container-xl.p-0
+        .container
+          h1.gallery-title Статьи
+          .row
+            .col-md-4
+              .card.h-100
+                .card-body
+                  img.card-img-top.mb-4(src='./img/pic/articles/fortnite-article-1.png' alt='fortnite-article-1')
+                  h5.card-title Рецензия на Dota: Dragon's Blood. 
+                  p.card-text
+                    | Каким получился мультсериал по Dota: 2 от авторов «Легенды о Корре»
+                .card-footer    
+                    a.btn.btn-primary(href='#') Читать
+            .col-md-4
+              .card.h-100
+                .card-body
+                  img.card-img-top.mb-4(src='./img/pic/articles/fortnite-article-2.png' alt='fortnite-article-2')
+                  h5.card-title Valve снизила стоимость подписки Dota Plus
+                  p.card-text
+                    | Valve снизила стоимость подписки Dota Plus для россиян почти в два раза
+                .card-footer    
+                    a.btn.btn-primary(href='#') Читать
+            .col-md-4
+              .card.h-100
+                .card-body
+                  img.card-img-top.mb-4(src='./img/pic/articles/fortnite-article-3.png' alt='fortnite-article-3')
+                  h5.card-title В Steam был зафиксирован рекорд 
+                  p.card-text
+                    | В Steam был зафиксирован рекорд по одновременному количеству игроков 
+                .card-footer    
+                    a.btn.btn-primary(href='#') Читать
+
